@@ -24,7 +24,7 @@ namespace kpatelsBookStore.Areas.Admin.Controllers
 
         public IActionResult Upsert(int? id)       //action method for Upsert
         {
-            Category category = new Category();    //using DevanshPatelBooks.Models;
+            Category category = new Category();    
             if (id == null)
             {
                 // this is for create

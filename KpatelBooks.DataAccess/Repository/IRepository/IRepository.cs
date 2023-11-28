@@ -17,12 +17,11 @@ namespace KpatelsBooks.DataAccess.Repository.IRepository
             );
         T GetFirstOrDefault(
             Expression<Func<T, bool>> filter = null,
-            string inculdeProperties = null
+            string includeProperties = null
             );
-        void Add(T entity);
-        void Remove(int id);
-        void Remove(T entity);
-        void Removerange(IEnumerable<T> entity);
+        void Add(T entity);//to add entity
+        void Remove(int id); // to remove an object or category
+        void Remove(T entity); // another way to remove an object
+        void RemoveRange(IEnumerable<T> entity); // removes a complete range of entities
     }
 }
-

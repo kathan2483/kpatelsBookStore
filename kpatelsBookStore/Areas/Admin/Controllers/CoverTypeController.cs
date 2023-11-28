@@ -60,7 +60,7 @@ namespace kpatelsBookStore.Areas.Admin.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var allObj = _unitOfWork.CoverType.GetAll ();
+            var allObj = _unitOfWork.CoverType.GetAll();
             return Json(new { data = allObj });
         }
         [HttpDelete]
