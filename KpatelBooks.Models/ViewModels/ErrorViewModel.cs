@@ -1,6 +1,6 @@
 using System;
 
-namespace kpatelsBookStore.Models
+namespace kpatelsBookStore.Models.ViewModels
 {
     public class ErrorViewModel
     {
